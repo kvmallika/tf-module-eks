@@ -83,9 +83,6 @@ resource "aws_iam_role_policy_attachment" "node-AmazonEC2ContainerRegistryReadOn
 POLICY
 }
 
-
-
-
 resource "aws_iam_role_policy" "ssm-ps-policy" {
   name = "eks-${var.ENV}-ssm-ps-policy"
   role = aws_iam_role.ssm-role-for-pod.id
