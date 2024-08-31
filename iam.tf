@@ -59,7 +59,7 @@ resource "aws_iam_role_policy_attachment" "node-AmazonEC2ContainerRegistryReadOn
 }
 
 
-/*resource "aws_iam_role" "ssm-role-for-pod" {
+resource "aws_iam_role" "ssm-role-for-pod" {
   name = "eks-ssm-ps-${var.ENV}-role"
 
   assume_role_policy = <<POLICY
@@ -105,4 +105,4 @@ resource "aws_iam_role_policy" "ssm-ps-policy" {
       }
     ]
   })
-}*/
+}
